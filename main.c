@@ -11,6 +11,12 @@ struct student {
 
 int main(int argc, char *argv[]) {
 	struct student s1={ 21, "chaehyun", 4.3};
-	printf ("%d,%c,%f", s1.ID, s1.name[1], s1.grade);
+	printf ("%d,%s,%f\n", s1.ID, s1.name, s1.grade);
+	
+	s1.grade=4.5;
+	s1.name[0]='j';
+	s1.ID=22;
+	
+	printf ("%d,%s,%f", s1.ID, s1.name, s1.grade);
 	return 0;
 }
